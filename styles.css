@@ -1,14 +1,73 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
-.header {
-    background-image: url('ruta-de-la-imagen.jpg');
+header {
+    background-image: url('images/header-background.jpg');
     background-size: cover;
-    background-position: center;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+.transport-images {
+    text-align: center;
+}
+
+.transport-images img {
+    max-width: 1000px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.transport-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transport-list li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 80px; /* Espacio entre cada elemento */
+    font-size: 35px; /* Tamaño de fuente */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #6abfe6;
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.content {
+    margin-bottom: 120px; /* Ajustar el margen inferior para dar espacio al pie de página */
+    padding-bottom: 20px; /* Opcional: agregar relleno inferior para mantener una distancia visual */
+}
+.footer-container {
+    text-align: center; /* Centrar el contenido */
+    background-color: #3498db; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
 }

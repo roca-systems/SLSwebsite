@@ -3,71 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Mi Página Web</title>
+    <title>SLServices - Instalaciones</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
+
+        h2 {
             text-align: center;
+            margin-top: 20px;
         }
-        nav {
+
+        .facility {
+            margin-bottom: 40px;
+        }
+
+        .facility h3 {
             text-align: center;
-            margin: 1em 0;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
-        nav a {
-            margin: 0 1em;
-            text-decoration: none;
-            color: #fff;
-            background-color: black;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
         }
-        nav a:hover {
-            background-color: #555;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2em;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        .images-grid img {
+            width: 300px;
+            height: 172px;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>SLServices</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="registro.html">registro</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="acerca.html">Acerca de</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="instalaciones.html">Instalaciones</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="registro.html">Registro</a>
-    </nav>
-    <div class="container">
+    <main>
         <h2>Nuestras Instalaciones</h2>
-        <p>Descripción de las instalaciones que ofrecemos
-    </form></p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
+    
+        <div class="facility">
+            <h3>Monterrey</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/1.jpg" alt="Monterrey 1">
+                <img src="images/instalacion/2.jpg" alt="Monterrey 2">
+                <img src="images/instalacion/3.jpg" alt="Monterrey 3">
+                <img src="images/instalacion/4.jpg" alt="Monterrey 4">
+                <img src="images/instalacion/5.jpg" alt="Monterrey 5">
+                <img src="images/instalacion/6.jpg" alt="Monterrey 6">
+            </div>
+        </div>
+        
+        <div class="facility">
+            <h3>Nogales</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/28.jpg" alt="Nogales 1">
+                <img src="images/instalacion/29.jpg" alt="Nogales 2">
+                <img src="images/instalacion/13.jpg" alt="Nogales 3">
+                <img src="images/instalacion/31.jpg" alt="Nogales 4">
+                <img src="images/instalacion/32.jpg" alt="Nogales 5">
+                <img src="images/instalacion/33.jpg" alt="Nogales 6">
+            </div>
+        </div>
+        
+        <div class="facility">
+            <h3>Querétaro</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/22.jpg" alt="Querétaro 1">
+                <img src="images/instalacion/23.jpg" alt="Querétaro 2">
+                <img src="images/instalacion/24.jpg" alt="Querétaro 3">
+                <img src="images/instalacion/25.jpg" alt="Querétaro 4">
+                <img src="images/instalacion/26.jpg" alt="Querétaro 5">
+                <img src="images/instalacion/27.jpg" alt="Querétaro 6">
+            </div>
+        </div>
+    
+        <div class="facility">
+            <h3>Guadalajara</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/1.jpg" alt="Guadalajara 1">
+                <img src="images/instalacion/2.jpg" alt="Guadalajara 2">
+                <img src="images/instalacion/3.jpg" alt="Guadalajara 3">
+                <img src="images/instalacion/4.jpg" alt="Guadalajara 4">
+                <img src="images/instalacion/5.jpg" alt="Guadalajara 5">
+                <img src="images/instalacion/6.jpg" alt="Guadalajara 6">
+            </div>
+        </div>
+        <div class="facility">
+            <h3>Tijuana</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/13.jpg" alt="Tijuana 1">
+                <img src="images/instalacion/14.jpg" alt="Tijuana 2">
+                <img src="images/instalacion/15.jpg" alt="Tijuana 3">
+                <img src="images/instalacion/16.jpg" alt="Tijuana 4">
+                <img src="images/instalacion/17.jpg" alt="Tijuana 5">
+                <img src="images/instalacion/18.jpg" alt="Tijuana 6">
+            </div>
+        </div>
+        
+        <div class="facility">
+            <h3>Hermosillo</h3>
+            <div class="images-grid">
+                <img src="images/instalacion/19.jpg" alt="Hermosillo 1">
+                <img src="images/instalacion/20.jpg" alt="Hermosillo 2">
+                <img src="images/instalacion/21.jpg" alt="Hermosillo 3">
+                <img src="images/instalacion/22.jpg" alt="Hermosillo 4">
+                <img src="images/instalacion/23.jpg" alt="Hermosillo 5">
+                <img src="images/instalacion/24.jpg" alt="Hermosillo 6">
+                
+            </div>
+        </div>
+        
+        <!-- Añadir detalles sobre las instalaciones -->
+        <div class="footer-container">
+            <p>Packaging & Storage | Cargo | Worldwide Transport | Warehousing | Door to Door Delivery | Ground Transport</p>
+            <p>Keep In Touch</p>
+            <p>+52 222 689 0501 | contacto@slservices.com.mx</p>
+            <p>Vía Atlixcayotl 5208 Piso 13 Int.1 Torre JV II San Andrés Cholula, Puebla 72810</p>
+            <p>Copyright &copy; 2024 SLServices. Todos los derechos reservados.</p>
+        </div>
+    </main>
+
 </body>
 </html>

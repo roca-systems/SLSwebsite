@@ -3,71 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Mi Página Web</title>
+    <title>SLServices - Servicios</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin: 1em 0;
-        }
-        nav a {
-            margin: 0 1em;
-            text-decoration: none;
-            color: #fff;
-            background-color: black;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2em;
+            font-size: 35px;
+            display: flex;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
+        .text {
+            margin-right: 20px;
+        }
+        .text p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .images {
+            display: flex;
+            flex-direction: column;
+        }
+        .images img {
+            margin: 5px 0;
+            width: 300px;
+            height: 172px;
+        }
+        header, footer {
+            background-color: #ffffff;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .footer-container {
             text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>SLServices</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="registro.html">registro</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="acerca.html">Acerca de</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="instalaciones.html">Instalaciones</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="registro.html">Registro</a>
-    </nav>
-    <div class="container">
+    <main>
         <h2>Nuestros Servicios</h2>
-        <p>Descripción de los servicios que ofrecemos
-    </form></p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
-    </footer>
+        <div class="container">
+            <div class="text">
+                <p>Estrategia y táctica de          <br>la cadena de suministro</p>
+                <br><br><br><br><br>
+                <p>Operaciones de la cadena         <br>de suministro</p>
+                <br><br><br><br><br>
+                <p>Optimización de la cadena        <br>de suministro</p>
+                <br><br><br><br><br>
+                <p>Cumplimiento de la normativa     <br> medioambiental</p>
+            </div>
+            <div class="images">
+                <img src="images/servicio/1.jpg" alt="Imagen 1">
+                <img src="images/servicio/2.jpg" alt="Imagen 2">
+                <img src="images/servicio/3.jpg" alt="Imagen 3">
+                <img src="images/servicio/6.jpg" alt="Imagen 4">
+                <img src="images/servicio/5.jpg" alt="Imagen 5">
+                <img src="images/servicio/7.jpg" alt="Imagen 6">
+                <img src="images/servicio/8.jpeg" alt="Imagen 7">
+            </div>
+        </div>
+        <div class="footer-container">
+            <p>Packaging & Storage | Cargo | Worldwide Transport | Warehousing | Door to Door Delivery | Ground Transport</p>
+            <p>Keep In Touch</p>
+            <p>+52 222 689 0501 | contacto@slservices.com.mx</p>
+            <p>Vía Atlixcayotl 5208 Piso 13 Int.1 Torre JV II San Andrés Cholula, Puebla 72810</p>
+            <p>Copyright &copy; 2024 SLServices. Todos los derechos reservados.</p>
+        </div>
+    </main>
 </body>
 </html>
+
